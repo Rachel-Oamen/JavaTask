@@ -27,12 +27,12 @@ public static void main(String[] args) {
         System.out.println("16. Exit");
 
         System.out.print("Select an option: ");
-        String choice = input.nextLine();
+        int choice = input.nextInt();
 
         switch (choice) {
 
           
-            case "1": {
+            case 1: {
                 contactsMenu:
                 while (true) {
 
@@ -43,33 +43,33 @@ public static void main(String[] args) {
                     System.out.println("4. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("No contacts available.");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.print("Enter contact name: ");
-                            String name = input.nextLine();
+                            int name = input.nextInt();
 
                             System.out.print("Enter phone number: ");
-                            String number = input.nextLine();
+                            int number = input.nextInt();
 
                             System.out.println(name + " has been added successfully.");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.print("Enter name to search: ");
-                            String searchName = input.nextLine();
+                            int searchName = input.nextInt();
 
                             System.out.println("Searching for " + searchName);
                             break;
 
-                        case "4":
-                            break contactsMenu;
+                        case 4:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -79,7 +79,7 @@ public static void main(String[] args) {
             }
 
           
-            case "2": {
+            case 2: {
                 messagesMenu:
                 while (true) {
 
@@ -90,27 +90,27 @@ public static void main(String[] args) {
                     System.out.println("4. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("Your inbox is empty.");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.print("Enter your message: ");
-                            String message = input.nextLine();
+                            int message = input.nextInt();
 
                             System.out.println("Message created: " + message);
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.println("No sent messages.");
                             break;
 
-                        case "4":
-                            break messagesMenu;
+                        case 4:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -120,7 +120,7 @@ public static void main(String[] args) {
             }
 
             
-            case "3": {
+            case 3: {
                 chatMenu:
                 while (true) {
 
@@ -130,26 +130,26 @@ public static void main(String[] args) {
                     System.out.println("3. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.print("Enter recipient name: ");
-                            String recipient = input.nextLine();
+                            int recipient = input.nextInt();
 
                             System.out.print("Type your message: ");
-                            String chatMessage = input.nextLine();
+                            int chatMessage = input.nextInt();
 
                             System.out.println("Message sent to " + recipient);
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("No chats available.");
                             break;
 
-                        case "3":
-                            break chatMenu;
+                        case 3:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -159,7 +159,7 @@ public static void main(String[] args) {
             }
 
             
-            case "4": {
+            case 4: {
                 callRegisterMenu:
                 while (true) {
 
@@ -171,28 +171,28 @@ public static void main(String[] args) {
                     System.out.println("5. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("No missed calls.");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("No received calls.");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.println("No dialled numbers.");
                             break;
 
-                        case "4":
+                        case 4:
                             System.out.println("Recent calls deleted.");
                             break;
 
-                        case "5":
-                            break callRegisterMenu;
+                        case 5:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -202,7 +202,7 @@ public static void main(String[] args) {
             }
 
             
-            case "5": {
+            case 5: {
                 toneMenu:
                 while (true) {
 
@@ -215,32 +215,32 @@ public static void main(String[] args) {
                     System.out.println("6. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("Ringing tone selected.");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("Adjusting ringing volume.");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.println("Message alert tone selected.");
                             break;
 
-                        case "4":
+                        case 4:
                             System.out.println("Keypad tones activated.");
                             break;
 
-                        case "5":
+                        case 5:
                             System.out.println("Warning tones activated.");
                             break;
 
-                        case "6":
-                            break toneMenu;
+                        case 6:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -250,7 +250,7 @@ public static void main(String[] args) {
             }
 
           
-            case "6": {
+            case 6: {
                 settingsMenu:
                 while (true) {
 
@@ -263,32 +263,32 @@ public static void main(String[] args) {
                     System.out.println("6. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("Phone settings selected.");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("Display settings selected.");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.println("Call settings selected.");
                             break;
 
-                        case "4":
+                        case 4:
                             System.out.println("Security settings selected.");
                             break;
 
-                        case "5":
+                        case 5:
                             System.out.println("Factory settings restored.");
                             break;
 
-                        case "6":
-                            break settingsMenu;
+                        case 6:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -298,7 +298,7 @@ public static void main(String[] args) {
             }
 
             
-            case "7": {
+            case 7: {
                 callDivertMenu:
                 while (true) {
 
@@ -312,36 +312,36 @@ public static void main(String[] args) {
                     System.out.println("7. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("All voice calls diverted.");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("Calls will be diverted when busy.");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.println("Calls will be diverted when not answered.");
                             break;
 
-                        case "4":
+                        case 4:
                             System.out.println("Calls will be diverted when unreachable.");
                             break;
 
-                        case "5":
+                        case 5:
                             System.out.println("All call diverts cancelled.");
                             break;
 
-                        case "6":
+                        case 6:
                             System.out.println("Checking call divert status.");
                             break;
 
-                        case "7":
-                            break callDivertMenu;
+                        case 7:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -351,7 +351,7 @@ public static void main(String[] args) {
             }
 
             
-            case "8": {
+            case 8: {
                 musicMenu:
                 while (true) {
 
@@ -365,36 +365,36 @@ public static void main(String[] args) {
                     System.out.println("7. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("Opening music player.");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("Radio.");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.println("Recorder.");
                             break;
 
-                        case "4":
+                        case 4:
                             System.out.println("Music stopped.");
                             break;
 
-                        case "5":
+                        case 5:
                             System.out.println("Opening track list.");
                             break;
 
-                        case "6":
+                        case 6:
                             System.out.println("Playing previous track.");
                             break;
 
-                        case "7":
-                            break musicMenu;
+                        case 7:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -404,7 +404,7 @@ public static void main(String[] args) {
             }
 
             
-            case "9": {
+            case 9: {
                 gamesMenu:
                 while (true) {
 
@@ -416,28 +416,28 @@ public static void main(String[] args) {
                     System.out.println("5. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("Starting Snake game.");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("Starting Space Impact.");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.println("Starting Sudoku game.");
                             break;
 
-                        case "4":
+                        case 4:
                             System.out.println("Choose your favourite game.");
                             break;
 
-                        case "5":
-                            break gamesMenu;
+                        case 5:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -447,7 +447,7 @@ public static void main(String[] args) {
             }
 
             
-            case "10": {
+            case 10: {
                 calculatorMenu:
                 while (true) {
 
@@ -459,7 +459,7 @@ public static void main(String[] args) {
                     System.out.println("5. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
       
                     }
                 }
@@ -467,7 +467,7 @@ public static void main(String[] args) {
             }
 
             
-            case "11": {
+            case 11: {
                 remindersMenu:
                 while (true) {
 
@@ -479,31 +479,31 @@ public static void main(String[] args) {
                     System.out.println("5. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.print("Enter your reminder: ");
-                            String reminder = input.nextLine();
+                            int  reminder = input.nextInt();
 
                             System.out.println("Reminder added: " + reminder);
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("Your reminders will appear here.");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.println("Reminder deleted.");
                             break;
 
-                        case "4":
+                        case 4:
                             System.out.println("All reminders deleted.");
                             break;
 
-                        case "5":
-                            break remindersMenu;
+                        case 5:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -513,7 +513,7 @@ public static void main(String[] args) {
             }
 
             
-            case "12": {
+            case 12: {
                 clockMenu:
                 while (true) {
 
@@ -524,24 +524,24 @@ public static void main(String[] args) {
                     System.out.println("4. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("Current Time: 05:40");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("Current Date: Nov-14-2026");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.println("Stopwatch feature coming soon.");
                             break;
 
-                        case "4":
-                            break clockMenu;
+                        case 4:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -551,7 +551,7 @@ public static void main(String[] args) {
             }
 
           
-            case "13": {
+            case 13: {
                 profilesMenu:
                 while (true) {
 
@@ -564,32 +564,32 @@ public static void main(String[] args) {
                     System.out.println("6. Back");
 
                     System.out.print("Select profile: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("General profile activated.");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("Silent profile activated.");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.println("Meeting profile activated.");
                             break;
 
-                        case "4":
+                        case 4:
                             System.out.println("Outdoor profile activated.");
                             break;
 
-                        case "5":
+                        case 5:
                             System.out.println("Pager profile activated.");
                             break;
 
-                        case "6":
-                            break profilesMenu;
+                        case 6:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -599,8 +599,8 @@ public static void main(String[] args) {
             }
 
             
-            case "14": {
-                wapMenu:
+            case 14: {
+                
                 while (true) {
 
                     System.out.println("\n===== SERVICES =====");
@@ -613,39 +613,39 @@ public static void main(String[] args) {
                     System.out.println("7. Back");
 
                     System.out.print("Select option: ");
-                    String submenuChoice = input.nextLine();
+                    int submenuChoice = input.nextInt();
 
                     switch (submenuChoice) {
 
-                        case "1":
+                        case 1:
                             System.out.println("Opening homepage.");
                             break;
 
-                        case "2":
+                        case 2:
                             System.out.println("Opening bookmarks.");
                             break;
 
-                        case "3":
+                        case 3:
                             System.out.print("Enter website address: ");
                             String address = input.nextLine();
 
                             System.out.println("Website address: " + address);
                             break;
 
-                        case "4":
+                        case 4:
                             System.out.println("Opening service inbox.");
                             break;
 
-                        case "5":
+                        case 5:
                             System.out.println("Opening saved pages.");
                             break;
 
-                        case "6":
+                        case 6:
                             System.out.println("Opening settings.");
                             break;
 
-                        case "7":
-                            break wapMenu;
+                        case 7:
+                            break;
 
                         default:
                             System.out.println("Invalid choice!");
@@ -655,14 +655,14 @@ public static void main(String[] args) {
             }
 
     
-            case "15":
+            case 15:
                 System.out.println("SIM services");
                 break;
 
             
-            case "16":
+            case 16:
                 System.out.println("Thank you for using Nokia!");
-                input.close();
+                
                 return;
 
             default:
