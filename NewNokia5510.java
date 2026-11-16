@@ -33,7 +33,7 @@ public static void main(String[] args) {
 
           
             case 1: {
-                contactsMenu:
+            
                 while (true) {
 
                     System.out.println("\nCONTACTS");
@@ -80,7 +80,7 @@ public static void main(String[] args) {
 
           
             case 2: {
-                messagesMenu:
+                
                 while (true) {
 
                     System.out.println("\n===== MESSAGES =====");
@@ -121,7 +121,7 @@ public static void main(String[] args) {
 
             
             case 3: {
-                chatMenu:
+            
                 while (true) {
 
                     System.out.println("\n===== CHAT =====");
@@ -160,7 +160,7 @@ public static void main(String[] args) {
 
             
             case 4: {
-                callRegisterMenu:
+                
                 while (true) {
 
                     System.out.println("\n===== CALL REGISTER =====");
@@ -203,7 +203,7 @@ public static void main(String[] args) {
 
             
             case 5: {
-                toneMenu:
+                
                 while (true) {
 
                     System.out.println("\n===== TONE TONES =====");
@@ -251,7 +251,7 @@ public static void main(String[] args) {
 
           
             case 6: {
-                settingsMenu:
+            
                 while (true) {
 
                     System.out.println("\n===== SETTINGS =====");
@@ -299,7 +299,7 @@ public static void main(String[] args) {
 
             
             case 7: {
-                callDivertMenu:
+                
                 while (true) {
 
                     System.out.println("\n===== CALL DIVERT =====");
@@ -352,7 +352,7 @@ public static void main(String[] args) {
 
             
             case 8: {
-                musicMenu:
+            
                 while (true) {
 
                     System.out.println("\n===== MUSIC =====");
@@ -405,7 +405,7 @@ public static void main(String[] args) {
 
             
             case 9: {
-                gamesMenu:
+    
                 while (true) {
 
                     System.out.println("\n===== GAMES =====");
@@ -448,7 +448,7 @@ public static void main(String[] args) {
 
             
             case 10: {
-                calculatorMenu:
+                
                 while (true) {
 
                     System.out.println("\n===== CALCULATOR =====");
@@ -468,7 +468,7 @@ public static void main(String[] args) {
 
             
             case 11: {
-                remindersMenu:
+            
                 while (true) {
 
                     System.out.println("\n===== REMINDERS =====");
@@ -514,7 +514,7 @@ public static void main(String[] args) {
 
             
             case 12: {
-                clockMenu:
+                
                 while (true) {
 
                     System.out.println("\n===== CLOCK =====");
@@ -552,7 +552,7 @@ public static void main(String[] args) {
 
           
             case 13: {
-                profilesMenu:
+            
                 while (true) {
 
                     System.out.println("\n===== PROFILES (ACTIVATION) =====");
